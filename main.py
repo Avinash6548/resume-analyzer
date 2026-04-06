@@ -25,6 +25,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
 # ── Database Setup ──────────────────────────────────────────
 DATABASE_URL = "sqlite:///./queries.db"
 engine = create_engine(DATABASE_URL, connect_args={"check_same_thread": False})
